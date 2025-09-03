@@ -147,6 +147,58 @@
       font-size: 22px;
     }
   }
+
+  .social-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #eafaf1;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.social-section h4 {
+  color: #27ae60;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #145a32;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-links a i {
+  font-size: 24px;
+}
+
+.social-links a:hover {
+  background-color: #27ae60;
+  color: #ffffff;
+}
+
+@media (min-width: 500px) {
+  .social-links {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
 </style>
 </head>
 
@@ -193,6 +245,22 @@
     </div>
   </div>
 </section>
+
+  <section class="social-section">
+  <h4>Contactez-moi & suivez-moi</h4>
+  <div class="social-links">
+    <a href="mailto:hugobatigne@gmail.com" target="_blank">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+    <a href="https://wa.me/33787312561" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+    <a href="https://instagram.com/hugo_bat12" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+  </div>
+</section>
+
 
 <section class="cta">
   <h4>Votez pour [Prénom]</h4>
