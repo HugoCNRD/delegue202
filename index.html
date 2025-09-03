@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ajout pour mobile -->
 <title>Campagne Délégué – 202</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
@@ -134,70 +135,121 @@
     margin-top: 40px;
   }
 
+  .social-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #eafaf1;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 40px auto;
+  }
+
+  .social-section h4 {
+    color: #27ae60;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .social-links a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #145a32;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .social-links a i {
+    font-size: 24px;
+  }
+
+  .social-links a:hover {
+    background-color: #27ae60;
+    color: #ffffff;
+  }
+
+  @media (min-width: 500px) {
+    .social-links {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
   @media (max-width: 700px) {
     .features {
       grid-template-columns: 1fr;
     }
 
+    .hero {
+      padding: 80px 15px 40px 15px;
+    }
+
     .hero h2 {
-      font-size: 24px;
+      font-size: 22px;
+    }
+
+    .hero p {
+      font-size: 16px;
     }
 
     .section h3 {
+      font-size: 20px;
+    }
+
+    .section p {
+      font-size: 15px;
+    }
+
+    .feature-card {
+      padding: 15px;
+    }
+
+    .cta {
+      padding: 30px 15px;
+    }
+
+    .cta h4 {
+      font-size: 20px;
+    }
+
+    .cta p {
+      font-size: 16px;
+    }
+
+    .social-section {
+      padding: 30px 15px;
+      max-width: 95%;
+    }
+
+    .social-links {
+      gap: 10px;
+    }
+
+    .social-links a {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+
+    header h1 {
       font-size: 22px;
     }
+
+    header img {
+      width: 50px;
+      height: 50px;
+    }
   }
-
-  .social-section {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #eafaf1;
-  border-radius: 15px;
-  max-width: 500px;
-  margin: 40px auto;
-}
-
-.social-section h4 {
-  color: #27ae60;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
-  margin-bottom: 25px;
-}
-
-.social-links {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.social-links a {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-  color: #145a32;
-  padding: 10px 15px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-
-.social-links a i {
-  font-size: 24px;
-}
-
-.social-links a:hover {
-  background-color: #27ae60;
-  color: #ffffff;
-}
-
-@media (min-width: 500px) {
-  .social-links {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
 
 </style>
 </head>
@@ -246,7 +298,7 @@
   </div>
 </section>
 
-  <section class="social-section">
+<section class="social-section">
   <h4>Contactez-moi & suivez-moi</h4>
   <div class="social-links">
     <a href="mailto:hugobatigne@gmail.com" target="_blank">
@@ -261,7 +313,6 @@
   </div>
 </section>
 
-
 <section class="cta">
   <h4>Votez pour Hugo !</h4>
   <p>Transformons notre classe en une équipe soudée où chaque voix compte.</p>
@@ -273,4 +324,5 @@
 
 </body>
 </html>
+
 
